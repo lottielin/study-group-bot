@@ -11,6 +11,8 @@ class StudyBot(commands.Bot):
         prefix = "!"
         super().__init__(command_prefix=prefix)
 
+        self.remove_command("help")
+
         for ext in extensions:
             self.load_extension(ext)
 
