@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-import utils.study_embed
+import utils.embed
 
 class Grouper(commands.Cog):
     def __init__(self, bot):
@@ -30,7 +30,7 @@ class Grouper(commands.Cog):
                 location = study_params.split('% ')[1]
                 time = study_params.split('% ')[2]
 
-                embed = utils.study_embed.study_embed(topic, location, time)
+                embed = utils.embed.study_embed(topic, location, time)
                 embed.set_author(
                     name=ctx.author.display_name,
                     icon_url=ctx.author.avatar_url
@@ -43,6 +43,7 @@ class Grouper(commands.Cog):
                 Enter !help to learn how to send study group invite.
                 '''
                 await msg.channel.send(help_msg)
+
 
 
 def setup(bot):
