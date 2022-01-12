@@ -1,6 +1,6 @@
 # Study Group Bot
 
-study-group-bot is an open source Discord server bot for ....
+study-group-bot is an open source Discord server bot for creating study group invites with quick command
 
 ### Features
 
