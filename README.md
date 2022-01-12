@@ -6,8 +6,8 @@ study-group-bot is an open source Discord server bot for ....
 
 ### Usage
 
-- Use !<command> to create ...
-- Use !... to ...
+- Use !study <topic> % <location> % <time> to create a study group invite embed in Discord
+- Use !help to retrieve overview of commands and usage
 
 ### Installation
 
